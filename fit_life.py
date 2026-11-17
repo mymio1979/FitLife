@@ -20,7 +20,8 @@ while True:
 
 while True:
     try:
-        user_height = float(input("Какой у вас рост метрах (например 1.75)? "))
+        user_height = float(
+            input("Какой у вас рост метрах (например 1.75)? "))
         break
     except Exception:
         print("Введите рост, используя раздеитель точка.")
@@ -34,7 +35,7 @@ else:
 # Подсчет воды: вес * 30 мл
 water_needed = round(user_weight * WATER_PER_KG / CONVERT_TO_LITER, 2)
 
-print(f"Отчет для пользоватля: {user_name} ({user_age}.)")
+print(f"Отчет для пользоватля: {user_name} ({user_age} г.)")
 print(f"Твой Индекс Массы Тела: {bmi:.1f}")
 print(f"Рекомендуемая норма воды: {water_needed:.2f} л. в день")
 print()
