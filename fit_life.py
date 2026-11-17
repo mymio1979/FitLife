@@ -8,14 +8,14 @@ while True:
     try:
         user_age = int(input("Сколько вам лет? "))
         break
-    except Exception:
+    except ValueError:
         print("Введите возраст числом!")
 
 while True:
     try:
         user_weight = float(input("Сколько вы вестите? "))
         break
-    except Exception:
+    except ValueError:
         print("Введите вес используя разделитель точка.")
 
 while True:
@@ -23,7 +23,7 @@ while True:
         user_height = float(
             input("Какой у вас рост метрах (например 1.75)? "))
         break
-    except Exception:
+    except ValueError:
         print("Введите рост, используя раздеитель точка.")
 
 # Формула ИМТ: вес разделить на (рост в квадрате)
